@@ -127,27 +127,29 @@ En esta sección se presentan las evidencias visuales del funcionamiento del sis
 
 ### Menú principal
 
-![Menú principal](docs/capturas/menu.png)
+<img width="436" height="204" alt="{8A5D3864-4DDF-4C81-B6FA-15F5D38C1395}" src="https://github.com/user-attachments/assets/9f933d07-104e-4d69-a8d1-176c6c576106" />
+
 
 ### Registro de estudiantes
 
-![Registro de estudiantes](docs/capturas/registro_estudiante.png)
+<img width="438" height="298" alt="image" src="https://github.com/user-attachments/assets/4f6079d8-a847-46c0-a1f9-35cd7a5123dd" />
+
 
 ### Registro de evaluaciones
 
-![Registro de evaluaciones](docs/capturas/registro_evaluacion.png)
+<img width="438" height="592" alt="image" src="https://github.com/user-attachments/assets/b6ddf06b-cb62-452a-8ccd-89d5ca379261" />
+
 
 ### Análisis del rendimiento académico
 
-![Análisis académico](docs/capturas/analisis_rendimiento.png)
+<img width="497" height="502" alt="image" src="https://github.com/user-attachments/assets/7f616482-2dbd-4120-ada0-cfb66d036959" />
+
 
 ### Subsecuencia creciente
 
-![Subsecuencia creciente](docs/capturas/subsecuencia.png)
+<img width="427" height="188" alt="{E9E77DB2-A6AB-44B3-A9B3-A2444178602F}" src="https://github.com/user-attachments/assets/c1c18dea-4e4b-4c5e-8414-edd588f469dc" />
 
-> Las imágenes deben agregarse a la carpeta `docs/capturas/` utilizando los nombres indicados.
 
----
 
 ## 📊 Distribución de responsabilidades
 
@@ -158,40 +160,8 @@ En esta sección se presentan las evidencias visuales del funcionamiento del sis
 | Integrante 3 | Integración del sistema | Desarrollo de `Main.java`, menú y coordinación de clases. |
 | Todos | Documentación y pruebas | Elaboración del UML, pruebas, README y revisión del proyecto. |
 
-*La distribución debe ajustarse a las actividades que cada integrante haya realizado realmente.*
-
 ---
 
-## 📑 Documentación
-
-La documentación complementaria se encuentra organizada en la carpeta `docs/`:
-
-- [Análisis del sistema](docs/analisis.md)
-- [Casos de prueba](docs/casos_prueba.md)
-
----
-
-## 🧪 Caso de referencia
-
-**Entrada:**
-
-```text
-[6, 8, 7, 9, 10]
-```
-
-**Subsecuencia estrictamente creciente:**
-
-```text
-[6, 8, 9, 10]
-```
-
-**Longitud obtenida:**
-
-```text
-4
-```
-
----
 
 ## 📌 Conclusión
 
