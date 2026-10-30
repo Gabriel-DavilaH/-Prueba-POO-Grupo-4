@@ -9,8 +9,8 @@ Sistema desarrollado en Java mediante Programación Orientada a Objetos (POO), d
 | N.º | Apellidos y nombres |
 |---|---|
 | 1 | Toalombo Punina Jeremy Patricio |
-| 2 | Nombre del integrante 2 |
-| 3 | Nombre del integrante 3 |
+| 2 | Dávila Hernández Gabriel Marcelo |
+| 3 | Masabanda Chasiluisa Jeremy Isaac | 
 
 ---
 
