@@ -153,5 +153,78 @@ public class Main {
             System.out.println("Formato de fecha incorrecto.");
             return;
         }
+System.out.print("Ingrese la nota (0-10): ");
 
+        if (!sc.hasNextDouble()) {
+            System.out.println("La nota debe ser numérica.");
+            sc.nextLine();
+            return;
+        }
+
+        double nota = sc.nextDouble();
+        sc.nextLine();
+
+        try {
+
+            Clase2 evaluacion = new Clase2(nota, fecha);
+
+            estudiante.agregarEvaluacion(evaluacion);
+
+            System.out.println(
+                "Evaluación registrada correctamente."
+            );
+
+        } catch (IllegalArgumentException e) {
+
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+
+    // Mostrar estudiantes
+    public static void mostrarEstudiantes() {
+
+        if (estudiantes.isEmpty()) {
+            System.out.println(
+                "No existen estudiantes registrados."
+            );
+            return;
+        }
+
+        for (Clase1 e : estudiantes) {
+            e.mostrarDatos();
+        }
+    }
+
+    // Analizar rendimiento
+    public static void analizarRendimiento() {
+
+        System.out.print("Identificación del estudiante: ");
+        String id = sc.nextLine().trim();
+
+        Clase1 estudiante = buscarEstudiante(id);
+
+        if (estudiante == null) {
+            System.out.println("Estudiante no encontrado.");
+            return;
+        }
+
+        analizador.analizarEstudiante(estudiante);
+    }
+
+    // Mostrar notas repetidas
+    public static void mostrarRepetidas() {
+
+        System.out.print("Identificación del estudiante: ");
+        String id = sc.nextLine().trim();
+
+        Clase1 estudiante = buscarEstudiante(id);
+
+        if (estudiante == null) {
+            System.out.println("Estudiante no encontrado.");
+            return;
+        }
+
+        analizador.mostrarNotasRepetidas(estudiante);
+    }
+}
        
