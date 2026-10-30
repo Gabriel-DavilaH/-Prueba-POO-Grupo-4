@@ -34,7 +34,7 @@ public class Clase3 {
             return;
         }
 
-        System.out.println("\n--- EVOLUCIÓN ACADÉMICA ---");
+        System.out.println("\n--- EVALUCIÓN ACADÉMICA ---");
 
         for (Clase2 e : lista) {
             System.out.println(
