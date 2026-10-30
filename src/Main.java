@@ -75,5 +75,83 @@ public class Main {
             System.out.print("Ingrese un número entero válido: ");
             sc.nextLine();
         }
+        int numero = sc.nextInt();
+        sc.nextLine();
+
+        return numero;
+    }
+
+    // Buscar estudiante
+    public static Clase1 buscarEstudiante(String id) {
+
+        for (Clase1 e : estudiantes) {
+
+            if (e.getIdentificacion().equalsIgnoreCase(id)) {
+                return e;
+            }
+        }
+
+        return null;
+    }
+
+    // Registrar estudiante
+    public static void registrarEstudiante() {
+
+        System.out.print("Identificación: ");
+        String id = sc.nextLine().trim();
+
+        if (id.isEmpty() || buscarEstudiante(id) != null) {
+            System.out.println(
+                "Identificación vacía o duplicada."
+            );
+            return;
+        }
+
+        System.out.print("Nombre: ");
+        String nombre = sc.nextLine().trim();
+
+        System.out.print("Carrera: ");
+        String carrera = sc.nextLine().trim();
+
+        if (nombre.isEmpty() || carrera.isEmpty()) {
+            System.out.println(
+                "Los campos no pueden estar vacíos."
+            );
+            return;
+        }
+
+        estudiantes.add(
+            new Clase1(id, nombre, carrera)
+        );
+
+        System.out.println(
+            "Estudiante registrado correctamente."
+        );
+    }
+
+    // Registrar evaluación
+    public static void registrarEvaluacion() {
+
+        System.out.print("Identificación del estudiante: ");
+        String id = sc.nextLine().trim();
+
+        Clase1 estudiante = buscarEstudiante(id);
+
+        if (estudiante == null) {
+            System.out.println("Estudiante no encontrado.");
+            return;
+        }
+
+        System.out.print("Ingrese la fecha (AAAA-MM-DD): ");
+        String fechaTexto = sc.nextLine();
+
+        LocalDate fecha;
+
+        try {
+            fecha = LocalDate.parse(fechaTexto);
+        } catch (Exception e) {
+            System.out.println("Formato de fecha incorrecto.");
+            return;
+        }
 
        
